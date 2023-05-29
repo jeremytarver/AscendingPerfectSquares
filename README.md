@@ -11,21 +11,21 @@ Requires Java 1.8+, Maven 3.9.x
 Assumptions - the list of numbers will be passed as an argument to main.  
 
 Build by running:
-mvn clean install
+`mvn clean install`
 
 this runs the unit tests, you can run them explicitly with
-mvn test
+`mvn test`
 
 To invoke the program:
-java -cp target/AscendingPerfectSquares-0.0.1-SNAPSHOT.jar org.tarver.app.Demo 1 33 4 16 9 55 2
+`java -cp target/AscendingPerfectSquares-0.0.1-SNAPSHOT.jar org.tarver.app.Demo 1 33 4 16 9 55 2`
 
 If any arguments are not valid integers, they will be omitted from further processing.
 The program prints the list of numbers to be processed, then the list of perfect squares in ascending order.
-'
-java -cp target/AscendingPerfectSquares-0.0.1-SNAPSHOT.jar org.tarver.app.Demo 1 33 4 16 9 55 2
+
+`java -cp target/AscendingPerfectSquares-0.0.1-SNAPSHOT.jar org.tarver.app.Demo 1 33 4 16 9 55 2
 
 List of valid integers:
 [1, 33, 4, 16, 9, 55, 2]
 List of perfect squares in ascending order:
 [1, 4, 9, 16]
-'
+`
