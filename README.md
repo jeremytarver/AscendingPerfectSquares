@@ -5,27 +5,33 @@ This project contains demonstration code that will take a series of numbers and 
 
 Ex: [1, 33, 4, 16, 9, 55, 2] should return [1, 4, 9, 16]
 
+## Requirements
+Java 1.8+, Maven 3.9.x
 
-Requires Java 1.8+, Maven 3.9.x
-
-Assumptions - the list of numbers will be passed as an argument to main.  
+## Assumptions 
+The list of numbers will be passed as an argument to main.  
 
 Build by running:
+
 `mvn clean install`
 
-this runs the unit tests, you can run them explicitly with
+The install goal also runs the unit tests - if you want to solely run the tests you can invoke:
+
 `mvn test`
 
 To invoke the program:
+
 `java -cp target/AscendingPerfectSquares-0.0.1-SNAPSHOT.jar org.tarver.app.Demo 1 33 4 16 9 55 2`
 
-If any arguments are not valid integers, they will be omitted from further processing.
-The program prints the list of numbers to be processed, then the list of perfect squares in ascending order.
+## Notes
+If any arguments are not valid integers, they will be ignored.
 
-`java -cp target/AscendingPerfectSquares-0.0.1-SNAPSHOT.jar org.tarver.app.Demo 1 33 4 16 9 55 2
+The program prints the list of valid integers, then the perfect squares in ascending order.
 
+```
+java -cp target/AscendingPerfectSquares-0.0.1-SNAPSHOT.jar org.tarver.app.Demo 1 33 4 16 9 55 2
 List of valid integers:
 [1, 33, 4, 16, 9, 55, 2]
 List of perfect squares in ascending order:
 [1, 4, 9, 16]
-`
+```
